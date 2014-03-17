@@ -51,13 +51,13 @@
    		<div class="row">
    			<div class="col-xs-12 col-md-6 panelIzquierdo">
    				<div class="encabezado">
-   					<div class="form-group">
-		            	<input type="text" placeholder="type query string" class="form-control">
-		            </div>
-            		<button type="submit" class="btn btn-success">Serch</button>
+		            <input id="inputFilter" type="text" placeholder="type for searching">
+		            <button id="btnFilter" type="button" class="btn btn-success">Find</button>
    				</div>
    				<div class="contenido">
-   				
+   					<ul>
+   						<!-- loaded from DB -->
+   					</ul>
    				</div>	
    			</div>
    			<div class="col-xs-12 col-md-6 panelDerecho">
@@ -65,8 +65,11 @@
    					
    				</div>
    				<div class="contenido">
-   					
-   				</div>s
+   					<br>
+   					<center>
+   						<p>select an item for for details</p>
+   					</center>
+   				</div>
    		</div>
     </div>
   		
@@ -78,10 +81,14 @@
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+		
+		<script src="js/vendor/underscore.js"></script>
 
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
+		
+		<script src="js/ImageGallery/imageGalleryTemplates.js"></script>
+		
+		<script src="js/ImageGallery/imageGallery.js"></script>
 
     </body>
 </html>

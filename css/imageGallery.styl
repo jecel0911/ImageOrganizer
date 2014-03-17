@@ -1,8 +1,35 @@
 
 .panelIzquierdo
-	border 1px solid red
+	//border 1px solid red
+	border-right 1px solid gray
+	.encabezado
+		input
+			width 90%
+			display inline
+			font-size 1.3em
+			border-radius 10px
+			&:focus
+				border none
+				box-shadow 1px 1px 3px gray;
+				border-radius 10px
+		button
+			display inline
+	.contenido
+		ul
+			
+			li
+				list-style none
+				margin 0 
+				padding 0
+				margin-left -40px
+				box-shadow 1px 1px 3px gray;
+				cursor context-menu
+				margin-top 3px
+				&:hover
+					font-weight bold
+
 .panelDerecho
-	border 2px solid blue
+	//border 2px solid blue
 
 .tituloPagina
 	background #0E0D01
@@ -12,3 +39,4 @@
 	font-weight bold
 	margin 0
 	padding 5px
+		
