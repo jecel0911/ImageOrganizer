@@ -50,9 +50,21 @@
     <div class="jumbotron">    
    		<div class="row">
    			<div class="col-xs-12 col-md-6 panelIzquierdo">
-   				<div class="encabezado">
-		            <input id="inputFilter" type="text" placeholder="type for searching">
-		            <button id="btnFilter" type="button" class="btn btn-success">Find</button>
+          <div class="encabezado">
+              <div id="frmAddItem">
+                <a id="btnHideAddNewItem" href="#">X</a>
+                <span>Adding new Item</span>
+                <input id="txtItem" index="1" name="txtItem" type="text" placeholder="New Item">
+                <button id="btnAddItem" index="2" type="button" class="btn btn-success">Add</button>
+              </div>
+              <hr/>
+              <div id="frmFind">
+                <input id="inputText" index="3" type="text" placeholder="type for searching">
+                <button id="btnFilter" index="4" type="button" class="btn btn-primary">Find</button>
+                <div id="frmShowAddItem">
+                  <a id="btnShowAddNewItem" index="5" href="#">Add new Item</a>
+                </div>
+              </div>
    				</div>
    				<div class="contenido">
    					<ul>
@@ -79,16 +91,12 @@
     </footer>
     </div> 
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-		
-		<script src="js/vendor/underscore.js"></script>
-
+        <script src="js/vendor/bootstrap.min.js"></script>		
+		    <script src="js/vendor/underscore.js"></script>
         <script src="js/plugins.js"></script>
-		
-		<script src="js/ImageGallery/imageGalleryTemplates.js"></script>
-		
-		<script src="js/ImageGallery/imageGallery.js"></script>
+
+    		<script src="js/ImageGallery/imageGalleryTemplates.js"></script>
+    		<script src="js/ImageGallery/imageGallery.js"></script>
 
     </body>
 </html>

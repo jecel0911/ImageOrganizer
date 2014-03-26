@@ -1,22 +1,12 @@
 
+fontColor = #70707C
+titleColor = rgb(120, 120, 136)
+
 .panelIzquierdo
 	//border 1px solid red
 	border-right 1px solid gray
-	.encabezado
-		input
-			width 90%
-			display inline
-			font-size 1.3em
-			border-radius 10px
-			&:focus
-				border none
-				box-shadow 1px 1px 3px gray;
-				border-radius 10px
-		button
-			display inline
 	.contenido
 		ul
-			
 			li
 				list-style none
 				margin 0 
@@ -27,7 +17,37 @@
 				margin-top 3px
 				&:hover
 					font-weight bold
-
+	.encabezado
+		#frmAddItem
+			display none
+			padding 0.4em
+			box-shadow 3px 7px 10px #383838;
+			span 
+				color titleColor
+				font-weight bold
+				float right
+			a
+				color red
+				font-weight bold
+				float left
+		#frmShowAddItem
+			text-align right
+			a
+				text-decoration underline
+		input
+			border none
+			border-radius 10px
+			color fontColor
+			display inline
+			font-size 1.3em
+			width 90%
+			&:focus
+				border none
+				border-radius 10px
+				box-shadow 1px 1px 3px gray;
+				color fontColor
+		button
+			display inline
 .panelDerecho
 	//border 2px solid blue
 

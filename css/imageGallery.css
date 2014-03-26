@@ -1,20 +1,6 @@
 .panelIzquierdo {
   border-right: 1px solid #808080;
 }
-.panelIzquierdo .encabezado input {
-  width: 90%;
-  display: inline;
-  font-size: 1.3em;
-  border-radius: 10px;
-}
-.panelIzquierdo .encabezado input:focus {
-  border: none;
-  box-shadow: 1px 1px 3px #808080;
-  border-radius: 10px;
-}
-.panelIzquierdo .encabezado button {
-  display: inline;
-}
 .panelIzquierdo .contenido ul li {
   list-style: none;
   margin: 0;
@@ -26,6 +12,44 @@
 }
 .panelIzquierdo .contenido ul li:hover {
   font-weight: bold;
+}
+.panelIzquierdo .encabezado #frmAddItem {
+  display: none;
+  padding: 0.4em;
+  box-shadow: 3px 7px 10px #383838;
+}
+.panelIzquierdo .encabezado #frmAddItem span {
+  color: #787888;
+  font-weight: bold;
+  float: right;
+}
+.panelIzquierdo .encabezado #frmAddItem a {
+  color: #f00;
+  font-weight: bold;
+  float: left;
+}
+.panelIzquierdo .encabezado #frmShowAddItem {
+  text-align: right;
+}
+.panelIzquierdo .encabezado #frmShowAddItem a {
+  text-decoration: underline;
+}
+.panelIzquierdo .encabezado input {
+  border: none;
+  border-radius: 10px;
+  color: #70707c;
+  display: inline;
+  font-size: 1.3em;
+  width: 90%;
+}
+.panelIzquierdo .encabezado input:focus {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #808080;
+  color: #70707c;
+}
+.panelIzquierdo .encabezado button {
+  display: inline;
 }
 .tituloPagina {
   background: #0e0d01;
