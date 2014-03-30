@@ -1,3 +1,3 @@
 
 window.templates = {};
-window.templates.T_itemList = '<li id="<%= _id %>"> <%= Description %> </li>';
+window.templates.T_itemList = '<li id="<%= _id %>" click="renderDetailedItem(<%= _id %>);"> <%= Description %> </li>';

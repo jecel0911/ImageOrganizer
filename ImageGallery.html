@@ -73,14 +73,21 @@
    				</div>	
    			</div>
    			<div class="col-xs-12 col-md-6 panelDerecho">
-   				</div><div class="encabezado">
-   					
-   				</div>
-   				<div class="contenido">
-   					<br>
-   					<center>
-   						<p>select an item for for details</p>
-   					</center>
+   				<div class="encabezado">
+            <form id="idFormUpload" action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+                <input type="hidden" id="idQuestion" name="idQuestion" value="">
+                <input id="file" type="file" name="myfile">
+                <input id="idbtnUpload" type="submit" value="Upload File to Server">
+            </form>
+          </div>
+          <div class="contenido">
+            <div class="detailItem">
+              <h2 id="descripcion"></h2>
+              <hr class="separador"/>
+              <ul id="imagesDetail">
+                <!-- loaded from DB -->
+              </ul>
+            </div>
    				</div>
    		</div>
     </div>
@@ -91,12 +98,13 @@
     </footer>
     </div> 
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
+        <script src="js/vendor/jquery.form.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>		
 		    <script src="js/vendor/underscore.js"></script>
         <script src="js/plugins.js"></script>
 
     		<script src="js/ImageGallery/imageGalleryTemplates.js"></script>
     		<script src="js/ImageGallery/imageGallery.js"></script>
-
+        <!--- <script>$('#fileupload').fileupload({ dataType: 'json' })</script> -->
     </body>
 </html>
