@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Image Orginicer</title>
+        <meta name="description" content="Orginice Images with description for esasy indexing">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+            .carousel h2{
+                margin: 0;     
+                color: #666;
+                padding-top: 90px;
+                font-size: 52px;
+                font-family: "trebuchet ms", sans-serif;    
+            }
+            .carousel .item{
+                background: #333;    
+                text-align: center;
+                height: 300px !important;
+            }
+            .navbar-collapse .menu-item a{
+              color: white;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" style="margin-left:2px">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="menuLogo navbar-brand" href="Home.html">
+            <img src="resources/img/iconImageOrganicer.png" alt="Home">
+          </a>
+          <a class="menuTitle navbar-brand" href="Home.html">Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="menu-intem"><a href="ImageGallery.html">Image Gallery</a></li>
+            <li><a href="#about"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  
+  <!-- carrousel of images -->
+  <div class="jumbotron">    
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+      <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li class="slide-one active"></li>
+            <li class="slide-two"></li>
+            <li class="slide-three"></li>
+        </ol>   
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <h2>Slide 1</h2>
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Slide 2</h2>
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Slide 3</h2>
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+  </div>
+  
+  <!-- Contenido inferior -->  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Features</h2>
+        <ul>
+          <li>Image Repository</li>
+          <li>Image Indexing</li>
+          <li>Upload and change Images</li>
+        </ul>
+        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <h2>Community</h2>
+        <p>This tool can be improved on GitHub. <a href="https://github.com/jecel0911/ImageOrganicer" target="_black">ImageOrginicer</a></p>
+        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+     </div>
+      <div class="col-lg-4">
+        <h2>About</h2>
+        <p>This proyect is a collaborative proyect for improving image orginicer.</p>
+        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+      </div>
+    </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2014</p>
+      </footer>
+    </div> 
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            // Activate carousel
+            $("#myCarousel").carousel();
+            
+            // Enable carousel control
+          $(".left").click(function(){
+              $("#myCarousel").carousel('prev');
+            });
+            $(".right").click(function(){
+              $("#myCarousel").carousel('next');
+            });
+            
+            // Enable carousel indicators
+            $(".slide-one").click(function(){
+              $("#myCarousel").carousel(0);
+            });
+            $(".slide-two").click(function(){
+              $("#myCarousel").carousel(1);
+            });
+            $(".slide-three").click(function(){
+              $("#myCarousel").carousel(2);
+            });
+        });
+        </script>
+        
+        <!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        -->
+    </body>
+</html>

@@ -1,9 +1,15 @@
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+.menuLogo{
+	margin-right: 20px;
+}
+.menuLogo img{
+	width: 100px !important;
+	height: 35px !important;
+}
+.menuTitle{
+	font-size: 2em;
+	border-bottom: 2px solid white;
+}
 
 
 
