@@ -215,4 +215,5 @@ pip-log.txt
 .mr.developer.cfg
 
 #Personal
-
+public/uploads/
+node_modules/

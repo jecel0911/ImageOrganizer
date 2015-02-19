@@ -1,0 +1,4 @@
+
+1. node --debug-brk server.js
+2. In other Terminal. node-inspector (Installed Globally).
+3. http://127.0.0.1:8080/debug?port=5858
