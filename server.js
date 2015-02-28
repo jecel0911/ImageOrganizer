@@ -39,7 +39,7 @@ app.get('/',function(req,res){
 });
 
 var db = 'dbImageGallery'; //Pruebas y Desarrollo
-//var db = 'dbProductionImageGallery';
+//var db = 'dbProductionImageGalleryBackEnd';  //BackEnd
 
 
 

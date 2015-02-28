@@ -130,7 +130,7 @@ function renderDetailedItem(idQuestion){
         	$('.panelDerecho .contenido .detailItem #descripcion').html(result.Description);
         	$('.panelDerecho .contenido .detailItem #imagesDetail').html('');
         	for(i=0;i<result.Images.length;i++){
-        		renderImage(result.Images[i].path);
+        		renderImage('http://localhost:3000/'+result.Images[i].path);
         	}
         }
     });
