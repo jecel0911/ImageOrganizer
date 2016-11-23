@@ -1,9 +1,10 @@
 {
-	"name": "API-Rest-for-ImageOrginicer",
-	"version":"0.0.1",
-	"dependencies":{
-		"express": "3.2.6",
-		"mongoose":"3.6.11",
-		"jquery-file-upload-middleware":"*"
-	}
+  "name": "API-Rest-for-ImageOrginicer",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.2.6",
+    "fs-extra": "^1.0.0",
+    "jquery-file-upload-middleware": "*",
+    "mongoose": "3.6.11"
+  }
 }

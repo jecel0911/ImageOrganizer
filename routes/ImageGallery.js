@@ -116,13 +116,16 @@ module.exports = function(operators) {
 	    var filePathNormaliced = require('path').normalize(filePath);
 	    var pathTemp = req.files.myfile.path;
 
-	    require('fs').rename(
-			pathTemp,
-			destinyPathNormaliced,
+	    console.log(require('path').normalize(pathTemp));
+	    console.log(require('path').normalize(destinyPathNormaliced));
+
+	    require('fs-extra').move(
+			require('path').normalize(pathTemp),
+			require('path').normalize(destinyPathNormaliced),
 			function(err){
 	            if(err){
 					res.send({
-	                    err: 'Ah crap! Something bad happened'
+	                    err: 'Ah crap! Something bad happened' + err
 					});
 	            	return;
 	            }

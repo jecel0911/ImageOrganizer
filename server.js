@@ -38,8 +38,13 @@ app.get('/',function(req,res){
 	res.sendfile(__dirname + '/public/index.html');
 });
 
-var db = 'dbImageGallery'; //Pruebas y Desarrollo
+//var db = 'dbImageGallery'; //Pruebas y Desarrollo
 //var db = 'dbProductionImageGalleryBackEnd';  //BackEnd
+//var db = 'dbProductionImageGalleryGit'; //Git y GitHub
+//var db = 'dbProductionImageGalleryNodeJsjs'; // NodeJS y JS
+//var db = 'dbProductionDSR_Oracle'; // 
+var db = 'dbProductionJavaScriptJcisar';
+//var db = 'dbProductionJavaScriptJcisar';
 
 
 
@@ -50,10 +55,10 @@ mongoose.connect('mongodb://localhost/'+db, function(err,res){
 	if(err){
 		console.log('ERROR: connecting to Database. ' + err);
 	}else{
-		console.log(' - Connected to Database');
+		console.log(' - Connected to Database: ' + db);
 	}
 });
 
 server.listen(3000,function(){
-	console.log(" - Node Server running on localhost:3000");
+	console.log(" - Node Server running on localhost:3000" );
 });

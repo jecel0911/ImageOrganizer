@@ -16,6 +16,8 @@ $(document).ready(function(){
 });
 */
 
+ip = 'localhost'
+
 $(document).ready(function(){
 	//action Filter on button.
 	$('#btnFilter').on('click',function(){
@@ -60,7 +62,7 @@ $(document).ready(function(){
 function renderListitems(queryString){
 	$.ajax({
         type: "GET",
-        url: 'http://localhost:3000/ImageGallery?queryString='+queryString,
+        url: 'http://'+ip+':3000/ImageGallery?queryString='+queryString,
         success: function (result,msg) {
         	$('.panelIzquierdo .contenido ul').html('');
         	for(i=0;i<result.length;i++){
@@ -83,7 +85,7 @@ function renderListitems(queryString){
 function saveNewItem(description){
 	$.ajax({
 	        type: "POST",
-	        url: 'http://localhost:3000/ImageGallery',
+	        url: 'http://'+ip+':3000/ImageGallery',
 	        data: 'json=' + JSON.stringify({ "Description": description}),
 	        success: function (result,msg) {
 				$('#btnHideAddNewItem').click();
@@ -112,7 +114,7 @@ function uploadFile(){
 
         	}
 			var path = response.path;
-			renderImage(path);
+			renderImage('http://'+ip+':3000/'+path);
         }
 	});
  	return false;
@@ -124,13 +126,13 @@ function renderDetailedItem(idQuestion){
 	$('#idFormUpload #idQuestion').val(idQuestion);
 	$.ajax({
         type: "GET",
-        url: 'http://localhost:3000/ImageGallery/'+idQuestion,
+        url: 'http://'+ip+':3000/ImageGallery/'+idQuestion,
         data: {"id": idQuestion},
         success: function (result,msg) {
         	$('.panelDerecho .contenido .detailItem #descripcion').html(result.Description);
         	$('.panelDerecho .contenido .detailItem #imagesDetail').html('');
         	for(i=0;i<result.Images.length;i++){
-        		renderImage('http://localhost:3000/'+result.Images[i].path);
+        		renderImage('http://'+ip+':3000/'+result.Images[i].path);
         	}
         }
     });
